@@ -79,10 +79,9 @@ class HttpApi():
 
 if __name__ == '__main__':
     # 被测接口url地址
-    url = "http://www.4snow.cn/Home/Index/go/op/updatepwd"
+    url = ""
     # 被测接口请求参数
-    data = {'password': '123456', 'newpwd': '123456'}
+    data = {}
     apitest = HttpApi()
-    apitest.set_login_url("http://www.4snow.cn/Home/Index/go/op/login")
     re = apitest.http_request('POST', url,data,True)
 
