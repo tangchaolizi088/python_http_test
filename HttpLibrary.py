@@ -24,8 +24,8 @@ class HttpApi():
         self.formatter = logging.Formatter('[%(asctime)s] %(name)s:%(levelname)s: %(message)s')
         self.hdr.setFormatter(self.formatter)
         self.logger.addHandler(self.hdr)
-        self.login_url = "http://www.4snow.cn/Home/Index/go/op/login"
-        self.login_data = {'login': 'xiaogu', 'pwd': '123456'}
+        self.login_url = ""
+        self.login_data = {}
 
 
 
